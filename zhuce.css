@@ -1,0 +1,115 @@
+
+ html{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+body,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+}
+img{
+    width: 2rem;
+}
+.return{
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+a{
+    text-decoration: none;
+}
+.logo-div{
+    height: 5rem;
+    position: relative;
+}
+a .logo{
+    width: 100px;
+    width: 8rem;
+    position: absolute;
+    top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+    
+}
+
+body{
+    /* background-color: white;
+    padding: 2rem; */
+    font-family: tahoma;
+}
+/* .xun{
+    text-align: right;
+    float: right;
+    padding-right: 30px;
+} */
+h1{
+    line-height: 1.3rem;
+    color: rgb(42, 53, 53);
+}
+.main{
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    /* box-shadow: 0 0 20px #638d15; */
+}
+.top{
+    background-color:#f3a033 ;
+}
+h2{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 50px 0 25px
+    
+}
+h3{
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 140px ;
+}  
+.signup{
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    top: -70px;
+    padding: 30px;
+    border:1px solid #e8e9ee; 
+}
+.signup .import{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+    color: #f3a033;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+::-webkit-input-placeholder{
+    color: #f3a033;
+}
+.signup .sex{
+    color: #f3a033 ;
+    margin-bottom: 20px;
+}
+.signup h4{
+    color: #f3a033 ;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+.signup button{
+    display: block;
+    width: 100%;
+    outline: none;
+    background-color:  #f3a033;
+    border: 1px solid #ce8321;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+}

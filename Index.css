@@ -1,0 +1,88 @@
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+}
+body{
+    background-color: white;
+    font-family: tahoma;
+}
+/* img{
+    width: 2rem;
+} */
+.return{
+    position: relative;
+    top: 1rem;
+    left: 0.2rem;
+}
+h1{
+    line-height: 4rem;
+    font-weight: bolder;
+    font-size: 2.6rem;
+    color: #f3a033;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+.logo-div{
+    height: 8rem;
+    position: relative;
+}
+.logo{
+    width: 8rem;
+    position: absolute;
+    top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto; 
+}
+h5{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #f3a033;
+}
+h2{
+    text-align: center;
+    color: #f3a033;
+    font-size: 1.5rem;
+    padding-bottom: 6rem;
+}
+.phone{
+    padding: 2rem;
+}
+.phone .import{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #f3a033;
+    color: #f3a033;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+::-webkit-input-placeholder{
+    color: #f3a033;
+}
+.phone button{
+    display: block;
+    width: 100%;
+    outline: none;
+    background-color: #f3a033;
+    border: 1px solid #ce8321;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+.checkbox{
+    padding-top: 1rem;
+    color: #f3a033;
+}

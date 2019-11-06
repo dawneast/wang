@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="Index.css">
+    <!-- <script type="text/javascript">
+function doJudge(){//判断是否选中的自定义函数
+if(document.getElementById('ck').checked=true){//判断id为ck的复选框(input框)的状态是否是选中，假设是选中
+$("#btn").removeAttr("disabled");//如果是，移除id为btn的标签的disabled属性
+}
+}
+
+    </script> -->
+    <script>
+         window.onload=function(){
+
+        /*在gameid增加对检查按钮的验证*/
+        var submitBtn = document.getElementById("submit");
+
+        submitBtn.onclick = function () {
+            if(!document.getElementById("checkbox").checked) {
+                alert("请核对信息,并勾选按钮!");
+                 return false;
+            }
+            var phoneReg = /^1[3-9][0-9]{9}$/;
+            var phone = document.getElementsByClassName("import")[0].value;
+            if(!phoneReg.test(phone)){
+                alert("请输入正确的手机号！");
+                return false;
+            }
+        };
+        }
+    </script>
+</head>
+<body>
+        <div class="header">
+                <div>
+                    <h1>
+                        手机号注册
+                    </h1>
+                </div>
+        </div>
+        <div class="middle">
+            <div class="logo-div">
+                <img class="logo" src="琴理.png" alt="logo">
+            </div>
+            </div>
+                <h5>QIN LI STUDIO</h5> 
+            </div>
+            <div>
+                <h2>琴理工作室为您服务</h2>
+            </div>
+        </div>
+        <div class="phone">
+            <form action="zhuce.html" autocomplete="off">
+                <div >
+                        <input class="import" type="text" placeholder="输入手机号进行注册" required>
+                </div>
+                
+        <div>
+            <button id="submit">下一步</button>
+        </div>
+        <div class="checkbox">
+            <input  id="checkbox" type="checkbox" name="rule">已经阅读并同意服务协议</input>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="zhuce.css">
+  <script>
+      var arr = '[{"studyCard":"1803050190","idCard":"123456","name":"小明","sex":"man" },{"studyCard":"1903050150","idCard":"789456","name":"小红","sex":"woman" },{"studyCard":"1603050140","idCard":"147258","name":"小张","sex":"man" }]';
+  window.onload = function(){
+      var sexinput = document.getElementsByClassName("sexinput");
+      var im = document.getElementsByClassName("import"); 
+      var json = JSON.parse(arr);
+      console.log(sexinput[0].value);
+      document.getElementsByTagName("button")[0].onclick = function(){
+        for( var i = 0 ; i < sexinput.length ; i++ ){
+            if(sexinput[i].checked){
+                var sex = sexinput[i].value;
+                console.log(sex);
+                break;
+            }
+        }
+        var flag = 0;
+        for( var j = 0 ; j < json.length ; j++ ){
+            if( json[j].studyCard == im[0].value ){
+                if(  json[j].idCard == im[1].value && json[j].name == im[2].value && json[j].sex == sex){
+                    flag = 1;
+                    break;
+                }  
+            }
+        }
+        if(!flag){
+            alert("您输入的数据有误！请重新输入！");
+            return false;
+        }
+      };
+  };
+  </script>
+
+       
+    
+</head>
+<body>
+        <div class="main">
+                <div class="top">
+                    <div class="header">
+                            <div class="return">
+                                    <a href="Index.html"><img src="返回 (1).png" alt="返回"></a>
+                                </div>
+                    <div class="logo-div">
+                        <a href="">
+                            <img class="logo" title="Welcome To QinLi Studio" src="琴理.png" alt=""> 
+                        </a>
+                    </div>
+                    </div>
+                        <h2>Welcome To SYLG University</h2>
+                        <h3>QIN LI STUDIO</h3> 
+                </div> 
+                <div class="signup">
+                    <h4>SIGN UP</h4>
+    <form action="tijiao.html">
+        <div>
+            <input class="import" type="text" placeholder="学号" required>
+        </div>
+
+        <div>
+            <input class="import" type="text" placeholder="身份证号" required>
+            
+        </div>
+
+        <div>
+            <input class="import" type="text" placeholder="姓名" required>
+            
+        </div> 
+        <div class="sex">
+           <span>性别</span> <input class="sexinput"  type="radio" name="xb" value="man"><span>男</span>
+        <input class="sexinput"  type="radio" name="xb" value="woman"checked="checked"><span>女</span>
+        </div>
+        <div>
+            <button class="lable">注册</button>
+        </div> 
+        </form>
+       </div>       
+    </div>
+</body>
+</html>
